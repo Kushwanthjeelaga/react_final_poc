@@ -69,7 +69,7 @@ const signInWithGoogle = async () => {
         authProvider: "google",
         email: user.email,
       });
-    toast.success(" user logged in") 
+    
     }
   } catch (err) {
     console.error(err);
@@ -80,7 +80,7 @@ const logInWithEmailAndPassword = async (email, password) => {
   try {
     localStorage.setItem("emailID", email);
     await signInWithEmailAndPassword(auth, email, password);
-    toast.success(" user logged in")
+   
   } catch (err) {
     console.error(err);
     alert(err.message);
@@ -98,7 +98,7 @@ const registerWithEmailAndPassword = async (name, email, password) => {
     });
 
     setDefaultData(email);
-    toast.success(" user logged in")
+   
     
   } catch (err) {
     console.error(err);
@@ -117,7 +117,7 @@ const sendPasswordReset = async (email) => {
 const logout = () => {
   localStorage.clear();
   signOut(auth);
-  toast.success("user logged out")
+  
 };
 export {
   auth,
