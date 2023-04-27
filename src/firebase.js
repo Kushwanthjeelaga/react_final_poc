@@ -110,7 +110,7 @@ const sendPasswordReset = async (email) => {
     await sendPasswordResetEmail(auth, email);
     toast.success("Password reset link sent!")
   } catch (err) {
-    console.error(err);
+    
     alert(err.message);
   }
 };
