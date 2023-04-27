@@ -1,0 +1,10 @@
+.btn-circle {
+    background-color: #00D100;
+    position: relative;
+    left: 92%;
+    width: 30px;
+    height: 30px;
+    padding: 3px 10px;
+    border-radius: 60px;
+    text-align: center;
+  }
